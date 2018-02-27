@@ -101,19 +101,6 @@
              channels="2" />
     </EncoderProfile>
 
-    <EncoderProfile quality="1440p" fileFormat="mp4" duration="30">
-      <Video codec="hevc"
-             bitRate="17000000"
-             width="2560"
-             height="1440"
-             frameRate="30" />
-
-      <Audio codec="aac"
-             bitRate="256000"
-             sampleRate="48000"
-             channels="2" />
-    </EncoderProfile>
-
     <EncoderProfile quality="2160p" fileFormat="mp4" duration="30">
       <Video codec="hevc"
              bitRate="50000000"
@@ -218,23 +205,6 @@
              width="1920"
              height="1080"
              frameRate="60" />
-
-      <!--
-            The Audio part of the profile will not be used since time lapse mode
-            does not capture audio
-      -->
-      <Audio codec="aac"
-             bitRate="256000"
-             sampleRate="48000"
-             channels="2" />
-    </EncoderProfile>
-
-    <EncoderProfile quality="timelapse1440p" fileFormat="mp4" duration="30">
-      <Video codec="hevc"
-             bitRate="17000000"
-             width="2560"
-             height="1440"
-             frameRate="30" />
 
       <!--
             The Audio part of the profile will not be used since time lapse mode
@@ -351,19 +321,6 @@
              channels="2" />
     </EncoderProfile>
 
-    <EncoderProfile quality="1440p" fileFormat="mp4" duration="30">
-      <Video codec="hevc"
-             bitRate="17000000"
-             width="2560"
-             height="1440"
-             frameRate="30" />
-
-      <Audio codec="aac"
-             bitRate="256000"
-             sampleRate="48000"
-             channels="2" />
-    </EncoderProfile>
-
     <EncoderProfile quality="timelapselow" fileFormat="mp4" duration="30">
       <Video codec="hevc"
              bitRate="384000"
@@ -455,23 +412,6 @@
              width="1920"
              height="1080"
              frameRate="60" />
-
-       <!--
-             The Audio part of the profile will not be used since time lapse mode
-             does not capture audio
-       -->
-      <Audio codec="aac"
-             bitRate="256000"
-             sampleRate="48000"
-             channels="2" />
-    </EncoderProfile>
-
-    <EncoderProfile quality="timelapse1440p" fileFormat="mp4" duration="30">
-      <Video codec="hevc"
-             bitRate="17000000"
-             width="2560"
-             height="1440"
-             frameRate="30" />
 
        <!--
              The Audio part of the profile will not be used since time lapse mode
