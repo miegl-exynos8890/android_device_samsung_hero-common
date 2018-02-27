@@ -24,11 +24,11 @@
     <CamcorderProfiles cameraId="0" startOffsetMs="700">
 
     <EncoderProfile quality="low" fileFormat="mp4" duration="30">
-      <Video codec="h264"
+      <Video codec="hevc"
              bitRate="384000"
              width="176"
              height="144"
-             frameRate="30" />
+             frameRate="120" />
 
       <Audio codec="aac"
              bitRate="128000"
@@ -37,10 +37,10 @@
     </EncoderProfile>
 
     <EncoderProfile quality="high" fileFormat="mp4" duration="30">
-      <Video codec="h264"
-             bitRate="17000000"
-             width="1920"
-             height="1080"
+      <Video codec="hevc"
+             bitRate="50000000"
+             width="3840"
+             height="2160"
              frameRate="30" />
 
       <Audio codec="aac"
@@ -50,11 +50,11 @@
     </EncoderProfile>
 
     <EncoderProfile quality="qcif" fileFormat="mp4" duration="30">
-      <Video codec="h264"
+      <Video codec="hevc"
              bitRate="384000"
              width="176"
              height="144"
-             frameRate="30" />
+             frameRate="120" />
 
       <Audio codec="aac"
              bitRate="128000"
@@ -63,11 +63,11 @@
     </EncoderProfile>
 
     <EncoderProfile quality="480p" fileFormat="mp4" duration="30">
-      <Video codec="h264"
+      <Video codec="hevc"
              bitRate="3449000"
              width="720"
              height="480"
-             frameRate="30" />
+             frameRate="120" />
 
       <Audio codec="aac"
              bitRate="256000"
@@ -76,11 +76,11 @@
     </EncoderProfile>
 
     <EncoderProfile quality="720p" fileFormat="mp4" duration="30">
-      <Video codec="h264"
+      <Video codec="hevc"
              bitRate="12000000"
              width="1280"
              height="720"
-             frameRate="30" />
+             frameRate="120" />
 
       <Audio codec="aac"
              bitRate="256000"
@@ -89,10 +89,36 @@
     </EncoderProfile>
 
     <EncoderProfile quality="1080p" fileFormat="mp4" duration="30">
-      <Video codec="h264"
+      <Video codec="hevc"
              bitRate="17000000"
              width="1920"
              height="1080"
+             frameRate="60" />
+
+      <Audio codec="aac"
+             bitRate="256000"
+             sampleRate="48000"
+             channels="2" />
+    </EncoderProfile>
+
+    <EncoderProfile quality="1440p" fileFormat="mp4" duration="30">
+      <Video codec="hevc"
+             bitRate="17000000"
+             width="2560"
+             height="1440"
+             frameRate="30" />
+
+      <Audio codec="aac"
+             bitRate="256000"
+             sampleRate="48000"
+             channels="2" />
+    </EncoderProfile>
+
+    <EncoderProfile quality="2160p" fileFormat="mp4" duration="30">
+      <Video codec="hevc"
+             bitRate="50000000"
+             width="3840"
+             height="2160"
              frameRate="30" />
 
       <Audio codec="aac"
@@ -102,11 +128,11 @@
     </EncoderProfile>
 
     <EncoderProfile quality="timelapselow" fileFormat="mp4" duration="30">
-      <Video codec="h264"
+      <Video codec="hevc"
              bitRate="384000"
              width="176"
              height="144"
-             frameRate="30" />
+             frameRate="120" />
 
       <!--
             The Audio part of the profile will not be used since time lapse mode
@@ -119,10 +145,10 @@
     </EncoderProfile>
 
     <EncoderProfile quality="timelapsehigh" fileFormat="mp4" duration="30">
-      <Video codec="h264"
-             bitRate="17000000"
-             width="1920"
-             height="1080"
+      <Video codec="hevc"
+             bitRate="50000000"
+             width="3840"
+             height="2160"
              frameRate="30" />
 
       <!--
@@ -136,11 +162,11 @@
     </EncoderProfile>
 
     <EncoderProfile quality="timelapseqcif" fileFormat="mp4" duration="30">
-      <Video codec="h264"
+      <Video codec="hevc"
              bitRate="384000"
              width="176"
              height="144"
-             frameRate="30" />
+             frameRate="120" />
 
       <!--
             The Audio part of the profile will not be used since time lapse mode
@@ -153,11 +179,11 @@
     </EncoderProfile>
 
     <EncoderProfile quality="timelapse480p" fileFormat="mp4" duration="30">
-      <Video codec="h264"
+      <Video codec="hevc"
              bitRate="3449000"
              width="720"
              height="480"
-             frameRate="30" />
+             frameRate="120" />
 
       <!--
             The Audio part of the profile will not be used since time lapse mode
@@ -170,11 +196,11 @@
     </EncoderProfile>
 
     <EncoderProfile quality="timelapse720p" fileFormat="mp4" duration="30">
-      <Video codec="h264"
+      <Video codec="hevc"
              bitRate="12000000"
              width="1280"
              height="720"
-             frameRate="30" />
+             frameRate="120" />
 
       <!--
             The Audio part of the profile will not be used since time lapse mode
@@ -187,10 +213,44 @@
     </EncoderProfile>
 
     <EncoderProfile quality="timelapse1080p" fileFormat="mp4" duration="30">
-      <Video codec="h264"
+      <Video codec="hevc"
              bitRate="17000000"
              width="1920"
              height="1080"
+             frameRate="60" />
+
+      <!--
+            The Audio part of the profile will not be used since time lapse mode
+            does not capture audio
+      -->
+      <Audio codec="aac"
+             bitRate="256000"
+             sampleRate="48000"
+             channels="2" />
+    </EncoderProfile>
+
+    <EncoderProfile quality="timelapse1440p" fileFormat="mp4" duration="30">
+      <Video codec="hevc"
+             bitRate="17000000"
+             width="2560"
+             height="1440"
+             frameRate="30" />
+
+      <!--
+            The Audio part of the profile will not be used since time lapse mode
+            does not capture audio
+      -->
+      <Audio codec="aac"
+             bitRate="256000"
+             sampleRate="48000"
+             channels="2" />
+    </EncoderProfile>
+
+    <EncoderProfile quality="timelapse2160p" fileFormat="mp4" duration="30">
+      <Video codec="hevc"
+             bitRate="50000000"
+             width="3840"
+             height="2160"
              frameRate="30" />
 
       <!--
@@ -214,11 +274,11 @@
     <CamcorderProfiles cameraId="1" startOffsetMs="700">
 
     <EncoderProfile quality="low" fileFormat="mp4" duration="30">
-      <Video codec="h264"
+      <Video codec="hevc"
              bitRate="384000"
              width="176"
              height="144"
-             frameRate="30" />
+             frameRate="120" />
 
       <Audio codec="aac"
              bitRate="128000"
@@ -227,10 +287,10 @@
     </EncoderProfile>
 
     <EncoderProfile quality="high" fileFormat="mp4" duration="30">
-      <Video codec="h264"
+      <Video codec="hevc"
              bitRate="17000000"
-             width="1920"
-             height="1080"
+             width="2560"
+             height="1440"
              frameRate="30" />
 
       <Audio codec="aac"
@@ -240,11 +300,11 @@
     </EncoderProfile>
 
     <EncoderProfile quality="qcif" fileFormat="mp4" duration="30">
-      <Video codec="h264"
+      <Video codec="hevc"
              bitRate="384000"
              width="176"
              height="144"
-             frameRate="30" />
+             frameRate="120" />
 
       <Audio codec="aac"
              bitRate="128000"
@@ -253,11 +313,11 @@
     </EncoderProfile>
 
     <EncoderProfile quality="480p" fileFormat="mp4" duration="30">
-      <Video codec="h264"
+      <Video codec="hevc"
              bitRate="3449000"
              width="720"
              height="480"
-             frameRate="30" />
+             frameRate="120" />
 
       <Audio codec="aac"
              bitRate="256000"
@@ -266,11 +326,11 @@
     </EncoderProfile>
 
     <EncoderProfile quality="720p" fileFormat="mp4" duration="30">
-      <Video codec="h264"
+      <Video codec="hevc"
              bitRate="12000000"
              width="1280"
              height="720"
-             frameRate="30" />
+             frameRate="120" />
 
       <Audio codec="aac"
              bitRate="256000"
@@ -279,10 +339,23 @@
     </EncoderProfile>
 
     <EncoderProfile quality="1080p" fileFormat="mp4" duration="30">
-      <Video codec="h264"
+      <Video codec="hevc"
              bitRate="17000000"
              width="1920"
              height="1080"
+             frameRate="60" />
+
+      <Audio codec="aac"
+             bitRate="256000"
+             sampleRate="48000"
+             channels="2" />
+    </EncoderProfile>
+
+    <EncoderProfile quality="1440p" fileFormat="mp4" duration="30">
+      <Video codec="hevc"
+             bitRate="17000000"
+             width="2560"
+             height="1440"
              frameRate="30" />
 
       <Audio codec="aac"
@@ -292,11 +365,11 @@
     </EncoderProfile>
 
     <EncoderProfile quality="timelapselow" fileFormat="mp4" duration="30">
-      <Video codec="h264"
+      <Video codec="hevc"
              bitRate="384000"
              width="176"
              height="144"
-             frameRate="30" />
+             frameRate="120" />
 
       <!--
             The Audio part of the profile will not be used since time lapse mode
@@ -309,10 +382,10 @@
     </EncoderProfile>
 
     <EncoderProfile quality="timelapsehigh" fileFormat="mp4" duration="30">
-      <Video codec="h264"
+      <Video codec="hevc"
              bitRate="17000000"
-             width="1920"
-             height="1080"
+             width="2560"
+             height="1440"
              frameRate="30" />
 
        <!--
@@ -326,11 +399,11 @@
     </EncoderProfile>
 
     <EncoderProfile quality="timelapseqcif" fileFormat="mp4" duration="30">
-      <Video codec="h264"
+      <Video codec="hevc"
              bitRate="384000"
              width="176"
              height="144"
-             frameRate="30" />
+             frameRate="120" />
 
        <!--
              The Audio part of the profile will not be used since time lapse mode
@@ -343,11 +416,11 @@
     </EncoderProfile>
 
     <EncoderProfile quality="timelapse480p" fileFormat="mp4" duration="30">
-      <Video codec="h264"
+      <Video codec="hevc"
              bitRate="3449000"
              width="720"
              height="480"
-             frameRate="30" />
+             frameRate="120" />
 
       <!--
             The Audio part of the profile will not be used since time lapse mode
@@ -360,11 +433,11 @@
     </EncoderProfile>
 
     <EncoderProfile quality="timelapse720p" fileFormat="mp4" duration="30">
-      <Video codec="h264"
+      <Video codec="hevc"
              bitRate="12000000"
              width="1280"
              height="720"
-             frameRate="30" />
+             frameRate="120" />
 
        <!--
              The Audio part of the profile will not be used since time lapse mode
@@ -377,10 +450,27 @@
     </EncoderProfile>
 
     <EncoderProfile quality="timelapse1080p" fileFormat="mp4" duration="30">
-      <Video codec="h264"
+      <Video codec="hevc"
              bitRate="17000000"
              width="1920"
              height="1080"
+             frameRate="60" />
+
+       <!--
+             The Audio part of the profile will not be used since time lapse mode
+             does not capture audio
+       -->
+      <Audio codec="aac"
+             bitRate="256000"
+             sampleRate="48000"
+             channels="2" />
+    </EncoderProfile>
+
+    <EncoderProfile quality="timelapse1440p" fileFormat="mp4" duration="30">
+      <Video codec="hevc"
+             bitRate="17000000"
+             width="2560"
+             height="1440"
              frameRate="30" />
 
        <!--
@@ -413,16 +503,22 @@
          FIXME : we only check Mpeg4 encorder cap and other codec doesn't check
                  codec cap
     -->
+    <VideoEncoderCap name="hevc" enabled="true"
+        minBitRate="64000" maxBitRate="100000000"
+        minFrameWidth="176" maxFrameWidth="3840"
+        minFrameHeight="144" maxFrameHeight="2160"
+        minFrameRate="1" maxFrameRate="30" />
+
     <VideoEncoderCap name="h264" enabled="true"
-        minBitRate="64000" maxBitRate="50000000"
+        minBitRate="64000" maxBitRate="100000000"
         minFrameWidth="176" maxFrameWidth="3840"
         minFrameHeight="144" maxFrameHeight="2160"
         minFrameRate="1" maxFrameRate="30" />
 
     <VideoEncoderCap name="h263" enabled="true"
-        minBitRate="64000" maxBitRate="1000000"
-        minFrameWidth="176" maxFrameWidth="800"
-        minFrameHeight="144" maxFrameHeight="480"
+        minBitRate="64000" maxBitRate="80000000"
+        minFrameWidth="176" maxFrameWidth="2048"
+        minFrameHeight="144" maxFrameHeight="2048"
         minFrameRate="1" maxFrameRate="30" />
 
     <VideoEncoderCap name="m4v" enabled="true"
