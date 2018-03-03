@@ -19,6 +19,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	android.hardware.drm@1.0-impl
 
+# OpenGL
+PRODUCT_PACKAGES += \
+	libGLES_android
+
 # Not shims you are looking for
 PRODUCT_PACKAGES += \
 	libprocname
